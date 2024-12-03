@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash V | Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #3498db;
+        }
+        section {
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 900px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #2c3e50;
+        }
+        footer {
+            text-align: center;
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 15px 0;
+            margin-top: 30px;
+            font-size: 0.9em;
+        }
+        .project, .skill {
+            margin-bottom: 20px;
+        }
+        .project h3, .experience h3 {
+            color: #3498db;
+            font-size: 1.5em;
+        }
+        ul {
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .contact a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Akash V</h1>
+        <p>Master of Computer Applications | Java Full Stack Developer</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate Java Full Stack Developer with a Master of Computer Applications (MCA) from Jain University and a certification in Java Full Stack Web Development. With strong proficiency in core Java (JSE), Java EE (JEE), MySQL, and full-stack development, I am excited to transition into a developer role where I can contribute my skills in building dynamic, scalable applications.</p>
+        <p>During my journey, I have developed expertise in both frontend and backend technologies, including HTML, CSS, JavaScript, Spring, Hibernate, and JDBC. I have successfully applied these skills in creating a food ordering website clone and other projects, demonstrating problem-solving, coding expertise, and teamwork.</p>
+        <p>I am actively seeking Java Full Stack Developer opportunities in Bangalore and eager to join a dynamic tech team where I can grow professionally and make meaningful contributions.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Food Delivery Web Application</h3>
+            <p><strong>Technologies:</strong> JEE, JSP, MySQL, HTML, CSS, JavaScript</p>
+            <p>Designed and developed a user-friendly food delivery platform with secure authentication and responsive design, ensuring a seamless user experience.</p>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <p><strong>Languages:</strong> Java (SE, JEE, JDBC)</p>
+            <p><strong>Frameworks:</strong> Spring, Hibernate</p>
+            <p><strong>Frontend Development:</strong> HTML, CSS, JavaScript</p>
+            <p><strong>Database:</strong> MySQL</p>
+            <p><strong>Tools:</strong> Eclipse, Visual Studio Code, IntelliJ IDEA</p>
+            <p><strong>Soft Skills:</strong> Leadership, Communication, Teamwork, Problem-Solving, Time Management</p>
+        </div>
+    </section>
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience">
+            <h3>Technical Support Engineer | Skoodle Learning Private Limited</h3>
+            <p><strong>Duration:</strong> March 2023 - April 2024</p>
+            <ul>
+                <li>Provided ERP support and implementation services, ensuring smooth deployment and operational efficiency.</li>
+                <li>Collaborated with clients to define system requirements and provided technical assistance.</li>
+                <li>Delivered training sessions to enhance user understanding of ERP modules.</li>
+            </ul>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><strong>Phone:</strong> +91 9620132215</p>
+        <p><strong>Email:</strong> <a href="mailto:akashv.199911@gmail.com">akashv.199911@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://in.linkedin.com/in/akashv11999" target="_blank">linkedin.com/in/akashv11999</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/Akash-v11" target="_blank">github.com/Akash-v11</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Akash V. All Rights Reserved.</p>
+    </footer>
+    <script>
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', event => {
+                event.preventDefault();
+                const section = document.querySelector(link.getAttribute('href'));
+                section.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
